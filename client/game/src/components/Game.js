@@ -73,8 +73,8 @@ export default class Game extends Component {
             <Layer>
                 <Field />
                 {Object.keys(this.state.players).map(player => {
-                    console.log(this.state.players[player].x);
-                    console.log(this.state.players[player].y);
+                    //console.log(this.state.players[player].x);
+                    //console.log(this.state.players[player].y);
                     return(<Ball
                         color={this.state.color}
                         vertical={this.state.players[player].x}

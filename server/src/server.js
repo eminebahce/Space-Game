@@ -24,6 +24,11 @@ io.on('connection', (socket) => {
         player.x = data.horizontal;
         player.y= data.vertical;
     })
+
+    socket.on('disconnected', () => {
+       delete players[socket.id];
+       io.emit('update-players', players);
+    });
 });
 
 setInterval(()=>{
