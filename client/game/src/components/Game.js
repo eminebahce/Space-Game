@@ -14,7 +14,8 @@ export default class Game extends Component {
       color: Konva.Util.getRandomColor(),
       vertical: 0,
       horizontal: 0,
-      players: []
+      players: [],
+      bullets: []
     };
 
     this.socket = io("localhost:4000");
@@ -29,7 +30,11 @@ export default class Game extends Component {
     });
   }
 
-  keys = ["w", "a", "s", "d"];
+  keys = ["w", "a", "s", "d", "t"];
+
+  shootBullet = event => {
+    this.setState({ bullets: [...this.state.bullets, 1] });
+  };
 
   handleKeyDown = event => {
     switch (event.key) {
@@ -44,6 +49,9 @@ export default class Game extends Component {
         break;
       case "d":
         this.setState({ vertical: 10 });
+        break;
+      case "t":
+        this.shootBullet();
         break;
       default:
         console.log("down: " + event.key);
@@ -68,7 +76,6 @@ export default class Game extends Component {
     }
   };
   render() {
-    console.log(this.state.players);
     return (
       <Layer>
         <Field />
@@ -77,12 +84,21 @@ export default class Game extends Component {
           //console.log(this.state.players[player].y);
           return (
             <Ball
+              key={player}
               color={this.state.color}
               vertical={this.state.players[player].x}
               horizontal={this.state.players[player].y}
             />
           );
         })}
+        {this.state.bullets.map(bullet => (
+          <Ball
+            key={Math.random()}
+            color={this.state.color}
+            vertical={100}
+            horizontal={100}
+          />
+        ))}
         {this.keys.map(key => (
           <KeyHandler
             keyEventName="keydown"
