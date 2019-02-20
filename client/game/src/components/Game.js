@@ -48,16 +48,16 @@ export default class Game extends Component {
   handleKeyDown = event => {
     switch (event.key) {
       case "w":
-        this.setState({ velocity: { x: this.state.velocity.x, y: -1 } });
+        this.setState({ velocity: { x: this.state.velocity.x, y: -3 } });
         break;
       case "s":
-        this.setState({ velocity: { x: this.state.velocity.x, y: 1 } });
+        this.setState({ velocity: { x: this.state.velocity.x, y: 3 } });
         break;
       case "a":
-        this.setState({ velocity: { x: -1, y: this.state.velocity.y } });
+        this.setState({ velocity: { x: -3, y: this.state.velocity.y } });
         break;
       case "d":
-        this.setState({ velocity: { x: 1, y: this.state.velocity.y } });
+        this.setState({ velocity: { x: 3, y: this.state.velocity.y } });
         break;
       default:
         console.log("down: " + event.key);
@@ -99,10 +99,10 @@ export default class Game extends Component {
             />
           );
         })}
-        {this.state.bullets.map(bullet => (
+        {this.state.bullets.map((bullet, index) => (
           <Bullet
             player={bullet.playerId}
-            key={Math.random()}
+            key={bullet.id}
             color={"red"}
             velocity={{ x: 10, y: 0 }}
             position={bullet.position}

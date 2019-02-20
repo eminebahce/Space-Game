@@ -9,7 +9,7 @@ const MIN_X = 12,
   MAX_X = WIDTH - MIN_X,
   MAX_Y = HEIGHT - MIN_Y;
 
-export default class Ball extends PureComponent {
+export default class Ship extends PureComponent {
   state = {
     color: this.props.color,
     x: Math.random() * (MAX_X - MIN_X) + MIN_X,

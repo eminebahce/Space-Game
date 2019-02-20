@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import Konva from "konva";
 import { Circle } from "react-konva";
 import { WIDTH, HEIGHT } from "./Field";
 
@@ -10,13 +11,16 @@ const MIN_X = 12,
 
 export default class Ball extends PureComponent {
   state = {
-    color: this.props.color,
+    color: Konva.Util.getRandomColor(),
     x: this.props.position.x,
     y: this.props.position.y,
-    direction: { x: this.props.velocity.x, y: this.props.velocity.y }
+    direction: { x: 0, y: 0 }
   };
 
   componentDidMount() {
+    const x = Math.floor(Math.random() * SPEED);
+    const y = SPEED - x;
+    this.setState({ direction: { x, y } });
     this.animate();
   }
 
@@ -24,49 +28,50 @@ export default class Ball extends PureComponent {
     let newVal = val + delta;
     let newDelta = delta;
 
-    if (newVal > max) {
-      newVal = min + newVal - max;
+    if (newVal > max || newVal < min) {
+      newDelta = -delta;
     }
 
     if (newVal < min) {
-      newVal = max - newVal;
+      newVal = min - newVal;
+    }
+    if (newVal > max) {
+      newVal = newVal - (newVal - max);
     }
 
     return { val: newVal, delta: newDelta };
   };
 
   animate = () => {
-    const x = this.state.newX || this.state.x,
-      y = this.state.newY || this.state.y,
-      horizontal = this.state.direction.x,
-      vertical = this.state.direction.y;
-    console.log(x, y, horizontal, vertical);
+    const { direction, x, y } = this.state;
 
-    if (horizontal !== 0 || vertical !== 0) {
-      const newX = this.newCoord(x, horizontal, MAX_X, MIN_X);
-      const newY = this.newCoord(y, vertical, MAX_Y, MIN_Y);
-
-      console.log(newX, newY);
+    if (direction.x !== 0 || direction.y !== 0) {
+      const newX = this.newCoord(x, direction.x, MAX_X, MIN_X);
+      const newY = this.newCoord(y, direction.y, MAX_Y, MIN_Y);
 
       this.setState({
-        newX: newX.val,
-        newY: newY.val
+        x: newX.val,
+        y: newY.val,
+        direction: {
+          x: newX.delta,
+          y: newY.delta
+        }
       });
     }
 
-    this.animationTimeout = setTimeout(this.animate, 100);
+    this.animationTimeout = setTimeout(this.animate, 1000 / 60);
   };
 
   render() {
-    const { color, x, y, newX, newY } = this.state;
+    const { color, x, y } = this.state;
 
     return (
       <Circle
         ref={comp => {
           this.ball = comp;
         }}
-        x={newX || x}
-        y={newY || y}
+        x={x}
+        y={y}
         radius={10}
         fill={color}
         shadowBlur={1}
