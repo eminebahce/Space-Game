@@ -34,52 +34,33 @@ export default class Game extends Component {
   }
 
   getShipPosition = (playerId, position) => {
-    const ships = this.state.shipPositions;
-    const i = ships.findIndex(ship => ship.playerId === playerId);
-    if (i === -1) {
-      this.setState({ shipPositions: [...ships, { playerId, position }] });
-    } else {
-      this.setState({
-        shipPositions: ships.map((ship, j) =>
-          i === j ? { playerId, position } : ship
-        )
-      });
-    }
+    const ships = this.state.players;
+    this.setState({
+      players: { ...ships, [playerId]: { ...ships[playerId], position } }
+    });
   };
 
-  getBulletPosition = (playerId, bulletId, position) => {
-    const bullets = this.state.bulletPositions.filter(bullet => {
-      return (
-        this.state.bullets.findIndex(
-          element => element.id === bullet.bulletId
-        ) !== -1
-      );
+  getBulletPosition = (bulletId, position) => {
+    const bullets = this.state.bullets;
+    this.setState({
+      bullets: bullets.map(bullet =>
+        bullet.id === bulletId ? { ...bullet, position } : { ...bullet }
+      )
     });
-    const i = bullets.findIndex(bullet => bullet.bulletId === bulletId);
-    if (i === -1) {
-      this.setState({
-        bulletPositions: [...bullets, { playerId, bulletId, position }]
-      });
-    } else {
-      this.setState({
-        bulletPositions: bullets.map((bullet, j) =>
-          i === j ? { playerId, bulletId, position } : bullet
-        )
-      });
-    }
   };
 
   detectCollision = () => {
-    const bullets = this.state.bulletPositions;
-    const ships = this.state.shipPositions;
+    const bullets = this.state.bullets;
+    const ships = Object.keys(this.state.players);
+    const players = this.state.players;
 
     bullets.forEach(bullet => {
-      ships.forEach(ship => {
+      ships.forEach(id => {
         if (
-          bullet.playerId !== ship.playerId &&
+          bullet.playerId !== id &&
           Math.abs(
-            Math.pow(bullet.position.x - ship.position.x, 2) +
-              Math.pow(bullet.position.y - ship.position.y, 2)
+            Math.pow(bullet.position.x - players[id].position.x, 2) +
+              Math.pow(bullet.position.y - players[id].position.y, 2)
           ) < 144
         ) {
           console.log("someone is dead");
@@ -148,6 +129,7 @@ export default class Game extends Component {
         {Object.keys(this.state.players).map(player => {
           return (
             <Ship
+              position={this.state.players[player].position}
               key={player}
               player={player}
               color={Konva.Util.getRandomColor()}

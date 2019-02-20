@@ -15,7 +15,8 @@ io.on("connection", socket => {
   console.log(socket.id);
   socket.on("new player", () => {
     players[socket.id] = {
-      velocity: { x: 0, y: 0 }
+      velocity: { x: 0, y: 0 },
+      position: { x: Math.random() * 800, y: Math.random() * 600 }
     };
   });
   socket.on("movement", data => {
@@ -31,7 +32,7 @@ io.on("connection", socket => {
 
 setInterval(() => {
   io.sockets.emit("state", players);
-}, 1000 / 60);
+}, 1000 / 100);
 
 server.listen(port, () => {
   console.log(`Server is running on port 4000`);

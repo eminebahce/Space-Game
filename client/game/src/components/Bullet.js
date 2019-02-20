@@ -22,7 +22,7 @@ export default class Bullet extends PureComponent {
     this.setState({ direction: { x, y } });
     setInterval(
       () =>
-        this.props.getBulletPosition(this.props.player, this.props.id, {
+        this.props.getBulletPosition(this.props.id, {
           x: this.state.x,
           y: this.state.y
         }),
