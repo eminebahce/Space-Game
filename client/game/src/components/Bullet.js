@@ -6,20 +6,19 @@ import { WIDTH, HEIGHT } from "./Field";
 const MIN_X = 12,
   MIN_Y = 12,
   MAX_X = WIDTH - MIN_X,
-  MAX_Y = HEIGHT - MIN_Y,
-  SPEED = 30;
+  MAX_Y = HEIGHT - MIN_Y;
 
-export default class Ball extends PureComponent {
+export default class Bullet extends PureComponent {
   state = {
     color: Konva.Util.getRandomColor(),
     x: this.props.position.x,
     y: this.props.position.y,
-    direction: { x: 0, y: 0 }
+    direction: this.props.direction
   };
 
   componentDidMount() {
-    const x = Math.floor(Math.random() * SPEED);
-    const y = SPEED - x;
+    const x = this.props.position.x;
+    const y = this.props.position.y;
     this.setState({ direction: { x, y } });
     this.animate();
   }

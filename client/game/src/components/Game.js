@@ -32,8 +32,8 @@ export default class Game extends Component {
 
   keys = ["w", "a", "s", "d"];
 
-  shootBullet = (playerId, position) => {
-    const newBullet = { playerId, id: Math.random(), position };
+  shootBullet = (playerId, position, direction) => {
+    const newBullet = { playerId, id: Math.random(), position, direction };
     this.setState({ bullets: [...this.state.bullets, newBullet] });
     setTimeout(() => this.removeBullet(newBullet.id), 1000);
   };
@@ -99,19 +99,19 @@ export default class Game extends Component {
             />
           );
         })}
-        {this.state.bullets.map((bullet, index) => (
+        {this.state.bullets.map(bullet => (
           <Bullet
             player={bullet.playerId}
             key={bullet.id}
             color={"red"}
-            velocity={{ x: 10, y: 0 }}
             position={bullet.position}
+            direction={bullet.direction}
           />
         ))}
         {this.keys.map(key => (
           <KeyHandler
             keyEventName="keydown"
-            key={key}
+            key={key + "down"}
             keyValue={key}
             onKeyHandle={this.handleKeyDown}
           />
@@ -119,7 +119,7 @@ export default class Game extends Component {
         {this.keys.map(key => (
           <KeyHandler
             keyEventName="keyup"
-            key={key}
+            key={key + "up"}
             keyValue={key}
             onKeyHandle={this.handleKeyUp}
           />
