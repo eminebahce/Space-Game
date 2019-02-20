@@ -101,7 +101,6 @@ export default class Ship extends PureComponent {
   };
 
   handleKeyPress = () => {
-    console.log(this.state.aiming);
     if (!this.state.canShoot) {
       return false;
     }
@@ -165,17 +164,3 @@ export default class Ship extends PureComponent {
     clearTimeout(this.animationTimeout);
   }
 }
-
-/* onKeyHandle = {() => {
-  if (!this.state.canShoot) {
-    return false;
-  }
-  this.props.shootBullet(this.props.player, {
-    x: this.state.x,
-    y: this.state.y
-  });
-  this.setState({ canShoot: false });
-  setTimeout(() => {
-    this.setState({ canShoot: true });
-  }, 1000);
-}} */

@@ -18,11 +18,6 @@ io.on("connection", socket => {
       velocity: { x: 0, y: 0 }
     };
   });
-  socket.on("state1", data => {
-    const player = players[socket.id] || {};
-    player.velocity = data.direction;
-    player.position = { x: data.position.x, y: data.position.y };
-  });
   socket.on("movement", data => {
     const player = players[socket.id] || {};
     player.velocity = data.velocity;
