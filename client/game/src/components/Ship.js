@@ -23,6 +23,16 @@ export default class Ship extends PureComponent {
 
   componentDidMount() {
     this.animate();
+    setInterval(() =>
+      this.props.getShipPosition(
+        this.props.player,
+        {
+          x: this.state.x,
+          y: this.state.y
+        },
+        200
+      )
+    );
   }
 
   newCoord = (val, delta, max, min) => {

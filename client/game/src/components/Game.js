@@ -15,7 +15,9 @@ export default class Game extends Component {
       velocity: { x: 0, y: 0 },
       position: { x: 0, y: 0 },
       players: [],
-      bullets: []
+      bullets: [],
+      shipPositions: [],
+      bulletPositions: []
     };
 
     this.socket = io("localhost:4000");
@@ -24,11 +26,67 @@ export default class Game extends Component {
     setInterval(() => {
       this.socket.emit("movement", this.state);
     }, 1000 / 60);
+    setInterval(this.detectCollision, 100);
 
     this.socket.on("state", players => {
       this.setState({ players });
     });
   }
+
+  getShipPosition = (playerId, position) => {
+    const ships = this.state.shipPositions;
+    const i = ships.findIndex(ship => ship.playerId === playerId);
+    if (i === -1) {
+      this.setState({ shipPositions: [...ships, { playerId, position }] });
+    } else {
+      this.setState({
+        shipPositions: ships.map((ship, j) =>
+          i === j ? { playerId, position } : ship
+        )
+      });
+    }
+  };
+
+  getBulletPosition = (playerId, bulletId, position) => {
+    const bullets = this.state.bulletPositions.filter(bullet => {
+      return (
+        this.state.bullets.findIndex(
+          element => element.id === bullet.bulletId
+        ) !== -1
+      );
+    });
+    const i = bullets.findIndex(bullet => bullet.bulletId === bulletId);
+    if (i === -1) {
+      this.setState({
+        bulletPositions: [...bullets, { playerId, bulletId, position }]
+      });
+    } else {
+      this.setState({
+        bulletPositions: bullets.map((bullet, j) =>
+          i === j ? { playerId, bulletId, position } : bullet
+        )
+      });
+    }
+  };
+
+  detectCollision = () => {
+    const bullets = this.state.bulletPositions;
+    const ships = this.state.shipPositions;
+
+    bullets.forEach(bullet => {
+      ships.forEach(ship => {
+        if (
+          bullet.playerId !== ship.playerId &&
+          Math.abs(
+            Math.pow(bullet.position.x - ship.position.x, 2) +
+              Math.pow(bullet.position.y - ship.position.y, 2)
+          ) < 144
+        ) {
+          console.log("someone is dead");
+        }
+      });
+    });
+  };
 
   keys = ["w", "a", "s", "d"];
 
@@ -96,6 +154,7 @@ export default class Game extends Component {
               velocity={this.state.players[player].velocity}
               socket={this.socket}
               shootBullet={this.shootBullet}
+              getShipPosition={this.getShipPosition}
             />
           );
         })}
@@ -103,9 +162,11 @@ export default class Game extends Component {
           <Bullet
             player={bullet.playerId}
             key={bullet.id}
+            id={bullet.id}
             color={"red"}
             position={bullet.position}
             direction={bullet.direction}
+            getBulletPosition={this.getBulletPosition}
           />
         ))}
         {this.keys.map(key => (
