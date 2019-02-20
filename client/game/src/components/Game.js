@@ -32,9 +32,30 @@ export default class Game extends Component {
 
   keys = ["w", "a", "s", "d", "t"];
 
-  shootBullet = event => {
-    this.setState({ bullets: [...this.state.bullets, 1] });
+  shootBullet = playerId => {
+    return { playerId, id: Math.random() };
   };
+
+  removeBullet = bulletId => {
+    const newBulletArray = this.state.bullets.filter(
+      bullet => bullet.id !== bulletId
+    );
+    this.setState({ bullets: newBulletArray });
+  };
+
+  /* componentDidUpdate = (prevProps, prevState) => {
+    if (this.state.bullets !== prevState.bullets) {
+      const bullets = this.state.bullets;
+      const bullet = bullets[bullets.length - 1];
+      setTimeout(() => {
+        this.setState({
+          bullets: this.state.bullets.filter(
+            element => element.id !== bullet.id
+          )
+        });
+      });
+    }
+  }; */
 
   handleKeyDown = event => {
     switch (event.key) {
@@ -51,12 +72,21 @@ export default class Game extends Component {
         this.setState({ vertical: 10 });
         break;
       case "t":
-        this.shootBullet();
+        const newBullet = this.shootBullet(this.state.players[0]);
+        this.setState({ bullets: [...this.state.bullets, newBullet] });
+
+        const newBulletArray = this.state.bullets.filter(
+          bullet => bullet.id !== newBullet.id
+        );
+
+        setTimeout(() => this.removeBullet(newBullet.id), 1000);
+
         break;
       default:
         console.log("down: " + event.key);
     }
   };
+
   handleKeyUp = event => {
     switch (event.key) {
       case "w":
@@ -75,6 +105,7 @@ export default class Game extends Component {
         console.log("up: " + event.key);
     }
   };
+
   render() {
     return (
       <Layer>
@@ -95,8 +126,8 @@ export default class Game extends Component {
           <Ball
             key={Math.random()}
             color={this.state.color}
-            vertical={100}
-            horizontal={100}
+            vertical={1}
+            horizontal={1}
           />
         ))}
         {this.keys.map(key => (
