@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Layer } from "react-konva";
 import Field from "./Field";
-import Ball from "./Ball";
+import Ship from "./Ship";
+import Bullet from "./Bullet";
 import Konva from "konva";
 import KeyHandler from "react-key-handler";
 import io from "socket.io-client";
@@ -11,9 +12,8 @@ export default class Game extends Component {
     super(props);
 
     this.state = {
-      color: Konva.Util.getRandomColor(),
-      vertical: 0,
-      horizontal: 0,
+      velocity: { x: 0, y: 0 },
+      position: { x: 0, y: 0 },
       players: [],
       bullets: []
     };
@@ -30,10 +30,12 @@ export default class Game extends Component {
     });
   }
 
-  keys = ["w", "a", "s", "d", "t"];
+  keys = ["w", "a", "s", "d"];
 
-  shootBullet = playerId => {
-    return { playerId, id: Math.random() };
+  shootBullet = (playerId, position) => {
+    const newBullet = { playerId, id: Math.random(), position };
+    this.setState({ bullets: [...this.state.bullets, newBullet] });
+    setTimeout(() => this.removeBullet(newBullet.id), 1000);
   };
 
   removeBullet = bulletId => {
@@ -43,44 +45,19 @@ export default class Game extends Component {
     this.setState({ bullets: newBulletArray });
   };
 
-  /* componentDidUpdate = (prevProps, prevState) => {
-    if (this.state.bullets !== prevState.bullets) {
-      const bullets = this.state.bullets;
-      const bullet = bullets[bullets.length - 1];
-      setTimeout(() => {
-        this.setState({
-          bullets: this.state.bullets.filter(
-            element => element.id !== bullet.id
-          )
-        });
-      });
-    }
-  }; */
-
   handleKeyDown = event => {
     switch (event.key) {
       case "w":
-        this.setState({ horizontal: -10 });
+        this.setState({ velocity: { x: this.state.velocity.x, y: -1 } });
         break;
       case "s":
-        this.setState({ horizontal: 10 });
+        this.setState({ velocity: { x: this.state.velocity.x, y: 1 } });
         break;
       case "a":
-        this.setState({ vertical: -10 });
+        this.setState({ velocity: { x: -1, y: this.state.velocity.y } });
         break;
       case "d":
-        this.setState({ vertical: 10 });
-        break;
-      case "t":
-        const newBullet = this.shootBullet(this.state.players[0]);
-        this.setState({ bullets: [...this.state.bullets, newBullet] });
-
-        const newBulletArray = this.state.bullets.filter(
-          bullet => bullet.id !== newBullet.id
-        );
-
-        setTimeout(() => this.removeBullet(newBullet.id), 1000);
-
+        this.setState({ velocity: { x: 1, y: this.state.velocity.y } });
         break;
       default:
         console.log("down: " + event.key);
@@ -90,16 +67,16 @@ export default class Game extends Component {
   handleKeyUp = event => {
     switch (event.key) {
       case "w":
-        this.setState({ horizontal: 0 });
+        this.setState({ velocity: { x: this.state.velocity.x, y: 0 } });
         break;
       case "s":
-        this.setState({ horizontal: 0 });
+        this.setState({ velocity: { x: this.state.velocity.x, y: 0 } });
         break;
       case "a":
-        this.setState({ vertical: 0 });
+        this.setState({ velocity: { x: 0, y: this.state.velocity.y } });
         break;
       case "d":
-        this.setState({ vertical: 0 });
+        this.setState({ velocity: { x: 0, y: this.state.velocity.y } });
         break;
       default:
         console.log("up: " + event.key);
@@ -111,23 +88,24 @@ export default class Game extends Component {
       <Layer>
         <Field />
         {Object.keys(this.state.players).map(player => {
-          //console.log(this.state.players[player].x);
-          //console.log(this.state.players[player].y);
           return (
-            <Ball
+            <Ship
               key={player}
-              color={this.state.color}
-              vertical={this.state.players[player].x}
-              horizontal={this.state.players[player].y}
+              player={player}
+              color={Konva.Util.getRandomColor()}
+              velocity={this.state.players[player].velocity}
+              socket={this.socket}
+              shootBullet={this.shootBullet}
             />
           );
         })}
         {this.state.bullets.map(bullet => (
-          <Ball
+          <Bullet
+            player={bullet.playerId}
             key={Math.random()}
-            color={this.state.color}
-            vertical={1}
-            horizontal={1}
+            color={"red"}
+            velocity={{ x: 10, y: 0 }}
+            position={bullet.position}
           />
         ))}
         {this.keys.map(key => (
