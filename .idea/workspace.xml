@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f7328dd-3577-4c5a-b097-adbe8ba804c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/game/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/00588f4a01f0f69ec179d64047cdb079.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0099dae4b16188ef1713e05ea8aec232.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/00ddfe32355a7b894737b3bf19c3c5ca.json" afterDir="false" />
@@ -388,8 +388,11 @@
       <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fcbff2e86cd78735f51cbb730c83cd9b.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fd3daa46120cb40cd25328979b10a769.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fd62bec589aefd582395339313e26dda.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/src/components/Bullet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/src/components/Ship.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/game/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/game/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/game/src/components/Ball.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/game/src/components/Ball.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/game/src/components/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/game/src/components/Game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/deneme.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.js" afterDir="false" />
     </list>
@@ -440,14 +443,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/game/src/components/Bullet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
+            <state relative-caret-position="238">
               <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -500,6 +521,8 @@
         <option value="$PROJECT_DIR$/client/game/src/components/Game.js" />
         <option value="$PROJECT_DIR$/client/game/src/components/Ship.js" />
         <option value="$PROJECT_DIR$/client/game/src/components/Bullet.js" />
+        <option value="$PROJECT_DIR$/client/game/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -532,23 +555,7 @@
             <path>
               <item name="Game" type="b2602c69:ProjectViewProjectNode" />
               <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -564,8 +571,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/game/src" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/client/game/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -596,13 +603,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38951000" />
+    <option name="totallyTimeSpent" value="39616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14806867" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14806867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Project Explorer" order="3" />
@@ -620,7 +627,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.3706112" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.396619" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -777,11 +784,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/game/src/components/Bullet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
+        <state relative-caret-position="238">
           <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
