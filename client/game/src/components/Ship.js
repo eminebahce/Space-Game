@@ -12,8 +12,8 @@ const MIN_X = 12,
 export default class Ship extends PureComponent {
   state = {
     color: this.props.color,
-    x: Math.random() * (MAX_X - MIN_X) + MIN_X,
-    y: Math.random() * (MAX_Y - MIN_Y) + MIN_Y,
+    x: this.props.position.x,
+    y: this.props.position.y,
     direction: { x: 0, y: 0 },
     aiming: { x: 0, y: 0 },
     canShoot: true
@@ -23,6 +23,16 @@ export default class Ship extends PureComponent {
 
   componentDidMount() {
     this.animate();
+    setInterval(() =>
+      this.props.getShipPosition(
+        this.props.player,
+        {
+          x: this.state.x,
+          y: this.state.y
+        },
+        200
+      )
+    );
   }
 
   newCoord = (val, delta, max, min) => {

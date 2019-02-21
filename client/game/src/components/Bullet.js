@@ -20,6 +20,14 @@ export default class Bullet extends PureComponent {
     const x = this.props.position.x;
     const y = this.props.position.y;
     this.setState({ direction: { x, y } });
+    setInterval(
+      () =>
+        this.props.getBulletPosition(this.props.id, {
+          x: this.state.x,
+          y: this.state.y
+        }),
+      200
+    );
     this.animate();
   }
 
@@ -78,6 +86,7 @@ export default class Bullet extends PureComponent {
     const { color, x, y } = this.state;
 
     return (
+
       <Star
           ref={node =>{
             this.str=node;
