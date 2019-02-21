@@ -2,12 +2,396 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f7328dd-3577-4c5a-b097-adbe8ba804c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/game/src/ship.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/00588f4a01f0f69ec179d64047cdb079.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0099dae4b16188ef1713e05ea8aec232.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/00ddfe32355a7b894737b3bf19c3c5ca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/01eebcbe0876d2f75e2fd4f93b3c3ca6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/035e295158d4fe8b4ffd7c54543429ed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/03897920dc659ddb1b50c33f9d2dd9e7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0567607f271d941023bb8d25a71bc482.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/064deae830c49e54b3b3f542103f1304.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/065d4cf178cbc5cdd374b4c7e12f687d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/06dd01957769cc38c2d212ba936307e9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/07018f628fe2582c9b17a86986a2fa4c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/08630ede2011d4d4879f121fd63a5bb9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/086bbd15c6edd52346fe73992d7961d7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/09bd91dd5bc562f188927dcffa784df5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/09c72aced39ea2c0200ee08d05a728ab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0a59bf3d62e9ec621b0bd0b8c900579a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0a79394befc3319b235ec1ae72107440.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0aa0c4f5691dd43c5542801a5e9b0414.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0acef3c4a9b70f9efe55c9016f14c51c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0b1e43f32f3d6a97d27bb757d10db16f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0b40014e022309adb9f5462b4312422c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0b54a5e46533cc8660078046bb740735.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0b8d44116bc65ede2419a7868d8bdba4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0c1677e71fc2b64ab123f52de564c70f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0ce31aa206c7d0c935142f9bcb05c269.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0cfd7a95065e122b778fd9e40dbda01f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0e9c54ff4f88a0588e02299777300a72.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/0fdafb5aa349254ad644a9896cdb1a5c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/122a05bf24a76f69b6f912f4a80f4554.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/13a7300f84f1156990f9eeff37e83960.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/15be7f7fcd07908b637e2375d82fe636.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/1605e3e496749047d7084e308b7f5d1b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/161d14d6438e36fbdc2478ca5865853d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/16a69d70473976995023d333b79015fb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/17290747df69e5135e67a75953253cd8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/1839362fc946d582c6741cfcc6a3da1e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/18d52eb499a1b31e2a6ebfe81e1fe471.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/19533e1dc061b9d5255fac1cf3e432a3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/19ebd985bbfd73f6009d316d3076fc42.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/19f45681bd843b7e95108a0b30437c24.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/1aae527e978d9230689a18748da9d1c9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/1b8284af258b229b1e67e4f0984e39eb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/1c631b6c82388ec4c6651694c2ba03ed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/1e45ab4847269055cda42a5d8869fad5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/1e7d477461f1a9192b25e13df3910624.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/1fa403df36f3c8d2ca1c0c0e73cdcf8c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/1ff9d6b8ca6b3266487ad79783168c56.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/21dbea0ce43f9d446b22bc258da206c8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/22036524c6091b2d3bfe85c06fb4e1f8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/22460f7cca7901d72306276c547b7e42.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/231ebfb1299c95ec94f34084728da4ea.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/233ec9f5b783e13e94ebcc5bf7dfb798.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/236d4cff582e8e6033207d16dc1f4707.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/24709e59569f47ecd8db4d7d4c895582.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2656bd030600c4ebc403f964a3146c00.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/26be8920c4eb4b77968a57829e301230.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/28c6ebc088aad2b8a9bf44335c5fcda7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/28f06e1ed375e67360a882741f1ed86b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2a0469c76631747d17289eccb6b84925.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2a6032c0249667749248dd0a80aba952.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2bcf98c5bb0fff86fdba2ea158ad6346.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2c2122fdc12ae32712538a036aa83015.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2c4f572ad17a5bec378e85d125f5a2af.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2cb2e020845e1632b44b29d238816708.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2db3eea1762b346c1b450beb272bdaef.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2e7e53889fb5bbdd1024b8090e5bb301.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2e91f697581c0a186d8421c3b5749125.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2ee0174466f8f21f43bb0a8065a6a009.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/2f20e0a8aed0716c88fd5a27f2b42c31.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3011bc6f83abceefa67ce02587397479.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3146b7bec2c85e8792e7fdfb3d699353.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/31980e56f187d5b5c15119c753d6d556.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/31db762af84e7678d0ef2d5dceb873ca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3253f07b4369f9c489dff12e9a997087.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/334ee3101f5c7a10699305a86d6cfa83.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/35046085e3ff855ce3ed16e7ebd7747d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/35863a2d7f2085cdb638429b6d7baabb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/35ed85005c0e87dd6e3c3c15371c545d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/36d76487c376a69185f316c8cf070506.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/36ea7ca9138901dd023526822dc55f61.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3865aa1773d73f614353cd303b99cceb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/38b5221780704c0ba9dbeb718d0e6750.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3958f59d2c5118f460b7e246cdda9610.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/39caee6613ce5e8e88feaac609e93cf0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3a74a6f51ba4e83847fc7f8be61afa51.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3b127a53d88de389621b67f6c8037252.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3b330778e5a636c30a32a58a485f1fe6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3b82b1f5bdb7965b43f122abf9f50533.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3c3d8d7a6f0447e4a47d4f1bb0dc920a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3ca06e6b337c532b17307c0a4860973f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3ccb157d2c8a01649eee81155be68d57.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3d380f44fc0113924646ef6b9b27b70f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3d45f748ec76116d16047b682af02d52.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3d7f39a10cb19123bb5333c1114a806d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3e80ff8ec49d29bc3cc64a82bdcc79a2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/3fadb7ba4aaac06c4dec6d5a7cdeea36.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/401be54e2c7ba9347cbfe3cd393e8929.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/403734ec7697b024d6bbf3baad07b391.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/40567f4f7503d6da4ec9adcde7d8384d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/40612cfbe127b20dafe57c7da97f2302.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/40f6bce29ad4fd55e33ebf2acc2a01b6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4133ccde82adc8daace76cf6896cebc2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/41a0419b9e08d1ebdbfc487f2cca0c1d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/41a88eda01b4d8dae04597f3b2d573f1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/41c340fc36414c2da7cd0f1c9a070136.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4285554767970b600130ba71e0f860da.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/42a742e2abab7b9ffd57f73f72c679ac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/42b33e52a033b813e023ee98fc434033.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4405ca13d62f496c2fd436ffc232c6e7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/455eeb663cd967fb6d5358601d0bb7a6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/474b0ec1d1fdcec2e4824e3f7f22a8b2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/48b984e9fe4dde109594e984152ac37f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/492774c1a4f6c090da25f5acdaa0eadb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/49c0e3f53c5516f40a62d2a69c7cd71c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4bf9ffda5f5351a82c268b2cf173de11.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4c0f0ffff34053cdff6434a60f9c3ffd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4c2194baaac22891f292280ce98d68fe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4c51155f83d191df3cfbc6fdd1e847eb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4ce637d84407d1bdbf6fc31334bea680.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4cf20e3d29c461466d0c023e740857c4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4e80b70f84b1021c0295448af63a9cc3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4f134b0151cbc75f518c86e44e63109f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/4f5b54c8c1f8a1cafcf38ac785ec3c29.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/5115bc205b64688b2aff00f9f8888dac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/51613d8c6122ae82e9c521a1d59b6010.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/525fe5809894cd0da2499cc082b0f60d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/53292f65352bc58c2f5830b5adf32958.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/539b3138217d03bb016d914247238e02.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/53b9a87fd4589f05156b6ff7a27f3370.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/543071ca364e811194586ecf6e8eec6b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/54a95dd007b86b3dad6b6ab5ab996ea9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/555659392fc23d7638805879d8091230.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/5657efef3157529d9ce53c42a913d04d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/5b50e989dcaabd1c471ac14dc6d75346.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/5c23152e0e037f261370eb9ddc33b09d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/5c562a1735cc8b0c508d9cad51463d26.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/5d16f714b94d6a9e9a1d85d6ee84c45a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/5e05694c8c69d94c7113020ea62e730f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/5f691b4c796812aa8a147adb98bfe3f0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/5f88e5c25f87aea82fc07f13e995ac7d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6073aa40b160d39ede47a62904e1dca2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/61f40258c7c20875ba795505370a6c16.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6203b0d94e7894a0831a4a5638d42fdd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/63191e41f173ab0ed58743bdd1306257.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/63fe82a97c33c6c84cac86ac88f91653.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/640827b9fe384c0d0bff28f265966f78.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/655bb39037fe49ff932a40641cd86d82.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6601a20c99ad7b7e4ee9479646205207.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/663fce2acaf4868b089a75bf97a37433.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6702ca1e8ab6ab0a0629ce987b9f5e33.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/672d4fa4b8da02d8c4065a66aa775bc5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/674b3b1c066871fcdd96186e1c72db0c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/67d0b8768596be796c838ae5c3a3caf5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/683c794f5522ca6d245b75ab6967abd1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6952f3d390133f31bd0c62ae242e0afd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6a02b789b1c33c9cd99476efb7b8929b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6a135f1fc320e2b3c23a5ecdd4e778e1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6b3ee86c10d05697b9187acd1ca2f40b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6b5eec34e4fb92fea63df4ffacff8ced.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6b7453b7ea849740cf5053df5a1915bd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6bf2eec90f12ba126626d64071e50b1e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6d591498cfb32d7b212f3b5286c9f007.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6dc8e1047bd621451b10ebb9007030c0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6e549f01084976f311a83f25a9764217.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6eba065ea41a4f4999a6332d35f57ff3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6f9f22080909d378739d8eebe9d2ce08.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/6fa332be03af8242d8733898fb9ccf71.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/702c14f799e6f1fb303e4cba77fb5c84.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/706ba27c6cf008762fe3f93fba596c0c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/70f32e3d0f8442e7788644de81f9943d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/711894a3f07d2e956879981447cd921c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/717ab26588d206530bb3f1938d2a7c80.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/720483440c01e8265893a9886fc48cb2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/735f1b67828c00e2f218cce5f97b8167.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/738ddb2226f224fc1d652e95ba1445a6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7496bbcc8a17ed9fde14632ee3a6a2a2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/74c7bb4c896b13085b668edb18d9e6d9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/74d633add0afb9aca7ea5fc598920801.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/759e8cdf2c05e8607d4e34befe237ded.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7604cadc082df008a2ea44554e804311.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7676c5d7056703ba6416fb03e995db78.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/76bc4b6786238f65e3e5e291e446b3ac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/76ede2bab2abdfe035ead871e4a89914.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/77a5f97be274eea6a0e31a07d08f0e28.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/77b08ca9eb48e7381998e4edcb8b049b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/77beb1ef2dda5e934d42423a924e55c1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/77c3328015f7c04cc25c54c507f90b64.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/783f615e1d8468039cdc4c7d3b8d30a9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7848620988e27423d5a69a75aba634ab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/79155ec6bf9b44385d59478b63282b74.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/798504550d0145f578173c3c4869adb9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/79e214cbb8e973f94bb80ea8cfea686d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7a927c6d4d8b6cd48f6b75919062db4d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7aee088bfec4c91139050be341b981ff.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7b56c6bd68914bd75c98a9b5038e8dc6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7bc172d9a0b384bf9f8a2e5b0c661e0f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7d241d6cefbdc7a3365ebfacdc259be9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7e3955495f08caef46c9e8193b2a14b5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7e83c9f6bf6836a9a26f5bef12f4353d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7fa28e75d79cd9f6a8c6e20f9a267b88.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/7fe5e18438c4a8ed74033e20b6da1c70.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/8024981963b57feb6339b3e45552a51e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/815020a08bbe291095279ccb33d637d2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/8192c56f1e2fb6715021b40701528fad.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/819ec21ec158c704a86e0ba6f0de497f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/82443db13f109e35a73656c5c5b967d5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/839eecd3509ff416aac6da0f4ef989e1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/8400de634bf7eddc57b2d39954ec5dea.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/8438de61e5e59c80d3b1a36c3b3b8036.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/847ea74af585abd81e3a129ba7cf33fc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/8514406cc815653da6d496b9d2c04055.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/86334db694cf487a1fbe56101cedf2db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/86b8d67a383f1aa563cff977a1cde5a8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/86da8a7b947887d3fb64d065667e55a9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/86dc3b50e8e232313cc3c827512c7134.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/872bd13a6d8fcd4e727eb805b961294c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/875d26cd1d8232f7ee2fc126edb67b77.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/898db38781fdf473b30d4869f0d74f50.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/8b2d336fc19c46340fa3b8e194407006.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/8bbc8a15bbaf20c02a8584eb83668f95.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/8ce5ead82f3d7ff0365432ea864a20fc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/8e80e73bb77fb6524fd1395ec158dea2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/8f80d450d895f17404051a8cb26bc059.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/906e2c49ebf1170eee571afa9077acba.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/91cbc81a5ef81254e8b5e814e0caf1f9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/91e469961ac98be407360e4d1d7dc759.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/91f034e12c665e27713c2194e84d2e39.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/92d11e3b9899744d6c95249799e6e306.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/957d02b9293b17131b33bb1f1bba29a1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9617e0d024a0c802788dc1aec6fb301a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/96a5ef21569270ef853c22fa3ec7efe6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/96b790031f8ae51b639acb91d51314d9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/97d80cee21d52b5a1a495db47fe12a04.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/982bd7146f360761e25d42359d3aef45.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/988a276b701e2edd96711f94c8853bbc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9b762a7aaf717a62cd7eb9d7bc14be69.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9b98ceee41a39061bc3a6aaa1260f488.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9c0ed4a931e8f9360e89286f2d7871a2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9c756a2da86fd30220898411cf08ad3a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9dc228eb228d99a971dc3e13cdce1352.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9e16c39dba0516a053907175e450d0b6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9e29bba1bf039ba2ed94d629280dd904.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9e4c2ffb57a650be0fb25e07f28c24ca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9f37b163163588a1a384b3ffef059f44.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/9fe003e7dfe976f64ccbcec6f0422a54.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a0dec0be9582e3d85f5543d965e7fcac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a1ce812b0cbd9d27450fd6117f8c3edb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a261bb83d05e96c93a93d24c85782e54.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a2ad635d88fc5d27ab19a631126a041a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a3172c45ee3023db05afa86694309e3a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a46fb4c4846a69ede4b7487c65305073.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a4b5d1b55c91e73115a7a4ff649c8c7c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a4d1ce2541c01a1d5c1d34e574528c39.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a70d13f82183c1ef2fbb483fd2b18f50.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a806e7d11e9df5d889ba88c91ce552c6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a80c88410aa0705f3fb71dc5ccba2b49.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/a88065db6f921cced69ab28648a89230.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ab2035fc1007415200549371a555e27b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/abdc7daf6b547df73d89d2607e7c9232.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ac6690c9698fa350090bf56dff34cf2a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ac8c5bec89cecbe55dedeba200705a53.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ac9f8af86329e6f84bcc614fb5269491.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/acc95712d94dd0b4195464dd6bef27ff.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ad12d171a888afd1d1477c1b0a9f4ded.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ad2dee6297c9e8fdab5de9e650daf8c3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ad3259e338ef9fe2ad0dc7ce2dd874f3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/afcf3258c37b9f96e3d49e22f1ca606e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/affed752a6404ec5677443cb499a91d5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b066c533b0c300a7501534e9e9dacbaf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b0763092b802194a44b79237d50922ad.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b07ea141a72393b26a89ec265b9fa0cf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b0e0643387a766c3bb9c05a979ce6228.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b0e7e6501e60786d561d08e904e86898.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b2a291bd1c040bd2b3fb15c185c7c579.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b44d3e6867f1d505c221d993ff9a67de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b4ba3ebc5953322ce10ef1596e03be99.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b637c5e73a19103d8d527938388a4335.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b64e51bc4ccc95176124bb686d258c1e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b6564436652860d9ca22f44ae2be6637.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b67053c821afce6e21654afc76021e3f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b75cbf936b5acf4e821e7c6c7a88363a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b7ba85757880d473c34b4db2e4296b64.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b7c336fc2a2d0499334f5b622d5e7ca0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b87d160fa2dd0964caf95e8fbc790fb2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b8fb977fc437f7f0e2c198444a01ec6c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b90483ec61e76dfa7ffeb2897403883e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/b90c91f7af90bdbed8a997c25bac2ade.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ba31b6d191ea7b254aa5b37f4abba027.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ba9b6f33fb00cc15c537e9610faaf48d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/bbf7654deb411c85064b4c13c3e88cc7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/bc922f8dcb9554f112ce45787571b8de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/bc9ce9a20c2afc71f23fdaba572949c8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/bce203424399390f0405ae4b850dbbfb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/bcf07d5374ba7360cb72e0a589ee56b2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/bd0449c72053c435cced3bcea9bb3e4d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/bed9d4517e05668e4332b1c602a2f820.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/bf1cc79a884ec1d1f094934c30b575f7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/bf688cfbe37c1a490ed00d1458774938.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c0624e346a7dd495c149a70b7cced456.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c218670b4428504a837a089835f3e6e8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c2c3efa92c049c8bba4425149de2d882.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c5faa25d34e24eb8fa41eb387afb66a0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c607355bc51759e7aa29dd924c877065.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c633436abcc6d0b3028a3f97169221b5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c669ddebe354fc332f25d53dceb11dde.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c749dc36c9f96dc69673ae75aeb5a263.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c775ab30727b0e6586da731f298436cb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c778c4e7e1e4bef557fca2369b31e83c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c7fc2da6028535ad041266d2887d50a7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c896200d8c3d902b1529cdc3d27b0edd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/c89eb27b497b2f6b2d32dcc503448b4d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ca12770cb9fa21233e78b66f79c193d9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/caa81b489c3b24eaa54e2c53e0ef85f6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/cc3671202f85974173b350e888ea4cd1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/cc537706f9a4c21826b51d9fd68db89d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/cd082152fb8f4696c7c73e772cee3099.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/cd0992a1cdc675d4126d57b099a33d57.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/cd9494ccbd68b1f157bb526432d847ec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/cedbc0f00f7b7751bf8a6383aa03a656.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/cf48588864df13c8864e8b775545b506.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/cf5ed9af391fdacec1ad1eb8a4a0cbc0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d18600beeab0e4ceb04e841584322bbb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d2f02246244f387f2a3fd6e103623c6a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d2f49f1f26fd6833fb46167c0d28b3dd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d3402414d23133d13b8b17748506298a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d355f336d6b0de6b4b351c8fe28a96af.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d395aacb52f43bb2250dc91968184e2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d4e798974c85c76062f2c6f6a507c4bb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d565b4e6ffaeded7ec45b84c3289a652.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d68b70c7f3c37d1efa3c895d56bcc252.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d81beb27ff936e50b35ab55aee353782.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d8274fbd55fc2a21099cf884d00b907c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/d96903d0303852e43eff8e5dac7f0d86.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/db1dcfbb1d16374639efe838f0875ca1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/dcbefc05209465d37f34237f70860fa3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/dd1d3c8f442b0dd478bd1dec621ab9af.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/dd71447ca5e3947b3217c9ab7ce90d05.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/dd978a50385e8eb6848c327005417930.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/df2147135ed2ea500f0e5824893d3a49.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/dfac7f6752cae4a3a3e3af52620dfbd7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e0ec2dfff6a347d7e13b74cec2f9af23.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e1195aa9265ee300fe72b4b3561c6a14.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e241e929a74cfb357efe631b889b7ad5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e27c22ec442766f25ad6a0f274fc584c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e2ca0f2ba28413bb5ea70c8cbeb819e7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e311f3b5db979449a66603b0eab4d432.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e34be322819d24eae7a50a4d2eb553f4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e37b1201b18789f735ae4b29bdee09c6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e3ba66ecf810922651a0d3fc533e1d52.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e5c62182ffbf96912296bb7a164914ab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e63aad39b847bc4cf9711c7f4ed0e26e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e6e6e7051724c2a86a62ef85d17c9710.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e9173a067ea3dcefde33ccccb634c71f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e9c8ae1274bd2fe3dbed185463e34896.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/e9cee4d3bfdcb8c2841092b6c042312b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ea84fb8f16ce6c0c2bfec434ca25fa6d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/eb25b7199ee643787ac88b5fa0519625.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/eba90e393f4f88800ac1d41ebe2e7cde.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/ecbfad4e3b92cd807f4096e9c677c5c1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/edf5a351312427151e937668e027ba82.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/edf94d4e7aada0e82717094363cf29c4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/eebb06cbe03d061a1d2510f4f638099e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f091c838e93ec64312b8a13d8958ff6d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f1c510d3d11509512897a40aa54b0b90.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f2aa67132460979006b4a46b6bbd0849.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f33bc187cd2af9954a701d4af5ccec8f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f37a602b1d59d2aa323b0e4e00eec0ca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f438d6103f5c9afffa0f09cc8b5437df.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f4d25ed747a452e95b50cc02945e756a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f51d515cc2ba3cc32cc5b771d2a48c2c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f59dc68822cfcf73a91aa692e91d3497.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f6a6e6e0764967058ea05be7321e2679.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f7df28834a2aae9279d10a92f672dc2e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f8681ec79e841b83b4d8188a03646195.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f8f4917da169c6eac86a4bb486d1fe5e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f9ac95cd04e73d51f3448388340df615.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/f9d1fe51d65ad6fdb4b45fb969381b2f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fb251830226e5fb564b3ab1b7291677b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fbb4a1a30c017af05694d6366bfe36a3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fbca4c40a2d690d937af32fa95dcac67.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fbf812602ded324c715f07cb065f3c9a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fcba0db75c0cc390a67f8f1d01dac47a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fcbff2e86cd78735f51cbb730c83cd9b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fd3daa46120cb40cd25328979b10a769.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/game/node_modules/.cache/babel-loader/fd62bec589aefd582395339313e26dda.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/game/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/game/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/game/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/game/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/game/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/game/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/game/src/components/Ball.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/game/src/components/Ball.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/deneme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,31 +407,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/game/src/components/Game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="81">
+              <caret line="113" column="30" lean-forward="true" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/game/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,11 +428,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/game/src/components/Ball.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+            <state relative-caret-position="172">
+              <caret line="72" column="11" lean-forward="true" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/game/src/components/Bullet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/game/src/components/Ship.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="131" column="4" lean-forward="true" selection-start-line="120" selection-start-column="2" selection-end-line="131" selection-end-column="4" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -109,14 +496,16 @@
         <option value="$PROJECT_DIR$/server/src/deneme.js" />
         <option value="$PROJECT_DIR$/server/src/server.js" />
         <option value="$PROJECT_DIR$/client/game/src/App.js" />
-        <option value="$PROJECT_DIR$/client/game/src/components/Game.js" />
         <option value="$PROJECT_DIR$/client/game/src/components/Ball.js" />
+        <option value="$PROJECT_DIR$/client/game/src/components/Game.js" />
+        <option value="$PROJECT_DIR$/client/game/src/components/Ship.js" />
+        <option value="$PROJECT_DIR$/client/game/src/components/Bullet.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1082" />
+    <option name="width" value="557" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -207,7 +596,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38278000" />
+    <option name="totallyTimeSpent" value="38951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -231,7 +620,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.29908973" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.3706112" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -301,13 +690,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/deneme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/deneme.js" />
     <entry file="file://$PROJECT_DIR$/client/game/node_modules/react-key-handler/dist/esm/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -332,16 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9898">
           <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/game/src/components/Game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -372,10 +745,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/game/src/components/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="113" column="30" lean-forward="true" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/game/src/components/Ball.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+        <state relative-caret-position="172">
+          <caret line="72" column="11" lean-forward="true" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/game/src/components/Ship.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="131" column="4" lean-forward="true" selection-start-line="120" selection-start-column="2" selection-end-line="131" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/game/src/components/Bullet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
