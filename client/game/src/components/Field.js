@@ -4,7 +4,7 @@ import { Group, Rect } from "react-konva";
 export const WIDTH = 800;
 export const HEIGHT = 600;
 
-const imageUrl = "https://thumbs-prod.si-cdn.com/Ww78WE-L6T6Cwkz0fd74030skzY=/800x600/filters:no_upscale()/https://public-media.si-cdn.com/filer/46/9e/469e0cd2-8ded-47b2-825a-63e293072c47/space_debris_1.jpg";
+const imageUrl = "http://3.bp.blogspot.com/-FZnYU3pQlbk/T_6B0GeG6fI/AAAAAAAAEuc/d_JPfy5D5oE/s1600/space+wallpaper+(1).jpeg";
 
 export default class Field extends PureComponent {
     constructor(...args) {
