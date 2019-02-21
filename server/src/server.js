@@ -11,6 +11,8 @@ const io = socket(server);
 app.set("port", port);
 
 const players = {};
+let bullets = [];
+const state = { players, bullets };
 io.on("connection", socket => {
   console.log(socket.id);
   socket.on("new player", () => {
@@ -24,6 +26,16 @@ io.on("connection", socket => {
     player.velocity = data.velocity;
   });
 
+  socket.on("bullet", bullet => {
+    if (bullet.playerId === socket.id) {
+      bullets.push(bullet);
+      setTimeout(
+        () => (bullets = bullets.filter(element => element.id !== bullet.id)),
+        1000
+      );
+    }
+  });
+
   socket.on("disconnected", () => {
     delete players[socket.id];
     io.emit("update-players", players);
@@ -31,7 +43,7 @@ io.on("connection", socket => {
 });
 
 setInterval(() => {
-  io.sockets.emit("state", players);
+  io.sockets.emit("state", state);
 }, 1000 / 100);
 
 server.listen(port, () => {

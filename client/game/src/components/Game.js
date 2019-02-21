@@ -28,8 +28,8 @@ export default class Game extends Component {
     }, 1000 / 60);
     setInterval(this.detectCollision, 100);
 
-    this.socket.on("state", players => {
-      this.setState({ players });
+    this.socket.on("state", state => {
+      this.setState({ players: state.players, bullets: state.bullets });
     });
   }
 
@@ -58,10 +58,9 @@ export default class Game extends Component {
       ships.forEach(id => {
         if (
           bullet.playerId !== id &&
-          Math.abs(
-            Math.pow(bullet.position.x - players[id].position.x, 2) +
-              Math.pow(bullet.position.y - players[id].position.y, 2)
-          ) < 144
+          Math.pow(bullet.position.x - players[id].position.x, 2) +
+            Math.pow(bullet.position.y - players[id].position.y, 2) <
+            144
         ) {
           console.log("someone is dead");
         }
@@ -73,8 +72,8 @@ export default class Game extends Component {
 
   shootBullet = (playerId, position, direction) => {
     const newBullet = { playerId, id: Math.random(), position, direction };
-    this.setState({ bullets: [...this.state.bullets, newBullet] });
-    setTimeout(() => this.removeBullet(newBullet.id), 1000);
+    this.socket.emit("shoot_bullet", newBullet);
+    console.log(this.state.bullets);
   };
 
   removeBullet = bulletId => {
