@@ -14,10 +14,9 @@ export default class Game extends Component {
     this.state = {
       velocity: { x: 0, y: 0 },
       position: { x: 0, y: 0 },
-      players: [],
+      players: {}, // ships
       bullets: [],
-      shipPositions: [],
-      bulletPositions: []
+      aPlayerHasDied: false
     };
 
     this.socket = io("localhost:4000");
@@ -29,7 +28,10 @@ export default class Game extends Component {
     setInterval(this.detectCollision, 100);
 
     this.socket.on("state", state => {
-      this.setState({ players: state.players, bullets: state.bullets });
+      this.setState({
+        players: { ...state.players },
+        bullets: [...state.bullets]
+      });
     });
   }
 
@@ -48,7 +50,7 @@ export default class Game extends Component {
       )
     });
   };
-
+  j;
   detectCollision = () => {
     const bullets = this.state.bullets;
     const ships = Object.keys(this.state.players);
@@ -62,10 +64,16 @@ export default class Game extends Component {
             Math.pow(bullet.position.y - players[id].position.y, 2) <
             144
         ) {
+          this.killPlayer(id);
           console.log("someone is dead");
+          this.setState({ aPlayerHasDied: true });
         }
       });
     });
+  };
+
+  killPlayer = id => {
+    this.socket.emit("kill_player", id);
   };
 
   keys = ["w", "a", "s", "d"];
@@ -73,7 +81,7 @@ export default class Game extends Component {
   shootBullet = (playerId, position, direction) => {
     const newBullet = { playerId, id: Math.random(), position, direction };
     this.socket.emit("shoot_bullet", newBullet);
-    console.log(this.state.bullets);
+    setTimeout(() => this.socket.emit("remove_bullet", newBullet.id), 1000);
   };
 
   removeBullet = bulletId => {
@@ -122,6 +130,9 @@ export default class Game extends Component {
   };
 
   render() {
+    if (this.state.aPlayerHasDied) {
+      console.log(this.state);
+    }
     return (
       <Layer>
         <Field />

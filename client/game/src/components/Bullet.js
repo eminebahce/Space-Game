@@ -79,8 +79,8 @@ export default class Bullet extends PureComponent {
         }}
         x={x}
         y={y}
-        radius={10}
-        fill={color}
+        radius={3}
+        fill={"white"}
         shadowBlur={1}
       />
     );
