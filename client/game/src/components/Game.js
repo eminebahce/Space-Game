@@ -14,7 +14,7 @@ export default class Game extends Component {
     this.state = {
       velocity: { x: 0, y: 0 },
       position: { x: 0, y: 0 },
-      players: {}, // ships
+      players: [], // ships
       bullets: [],
       aPlayerHasDied: false
     };
@@ -29,17 +29,20 @@ export default class Game extends Component {
 
     this.socket.on("state", state => {
       this.setState({
-        players: { ...state.players },
+        players: [...state.players],
         bullets: [...state.bullets]
       });
     });
   }
 
   getShipPosition = (playerId, position) => {
-    const ships = this.state.players;
-    this.setState({
+    const ships = this.state.players.map(player =>
+      player.id === playerId ? { ...player, position } : { ...player }
+    );
+    this.setState({ players: ships });
+    /* this.setState({
       players: { ...ships, [playerId]: { ...ships[playerId], position } }
-    });
+    }); */
   };
 
   getBulletPosition = (bulletId, position) => {
@@ -53,18 +56,17 @@ export default class Game extends Component {
   j;
   detectCollision = () => {
     const bullets = this.state.bullets;
-    const ships = Object.keys(this.state.players);
     const players = this.state.players;
 
     bullets.forEach(bullet => {
-      ships.forEach(id => {
+      players.forEach(ship => {
         if (
-          bullet.playerId !== id &&
-          Math.pow(bullet.position.x - players[id].position.x, 2) +
-            Math.pow(bullet.position.y - players[id].position.y, 2) <
+          bullet.playerId !== ship.id &&
+          Math.pow(bullet.position.x - ship.position.x, 2) +
+            Math.pow(bullet.position.y - ship.position.y, 2) <
             144
         ) {
-          this.killPlayer(id);
+          this.killPlayer(ship.id);
           console.log("someone is dead");
           this.setState({ aPlayerHasDied: true });
         }
@@ -79,6 +81,7 @@ export default class Game extends Component {
   keys = ["w", "a", "s", "d"];
 
   shootBullet = (playerId, position, direction) => {
+    console.log(playerId, position, direction);
     const newBullet = { playerId, id: Math.random(), position, direction };
     this.socket.emit("shoot_bullet", newBullet);
     setTimeout(() => this.socket.emit("remove_bullet", newBullet.id), 1000);
@@ -130,20 +133,17 @@ export default class Game extends Component {
   };
 
   render() {
-    if (this.state.aPlayerHasDied) {
-      console.log(this.state);
-    }
     return (
       <Layer>
         <Field />
-        {Object.keys(this.state.players).map(player => {
+        {this.state.players.map(player => {
           return (
             <Ship
-              position={this.state.players[player].position}
-              key={player}
-              player={player}
+              position={player.position}
+              key={player.id}
+              player={player.id}
               color={Konva.Util.getRandomColor()}
-              velocity={this.state.players[player].velocity}
+              velocity={player.velocity}
               socket={this.socket}
               shootBullet={this.shootBullet}
               getShipPosition={this.getShipPosition}
