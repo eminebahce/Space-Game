@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Game from "./components/Game";
-import {Stage} from "react-konva";
+import {Stage, Layer, Image} from "react-konva";
 import './App.css';
 
 class App extends Component {

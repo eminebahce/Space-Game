@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import Konva from "konva";
-import { Circle } from "react-konva";
+import {Circle, Star} from "react-konva";
 import { WIDTH, HEIGHT } from "./Field";
 
 const MIN_X = 12,
@@ -69,19 +69,35 @@ export default class Bullet extends PureComponent {
     this.animationTimeout = setTimeout(this.animate, 1000 / 60);
   };
 
+  rotation = () => {
+    const x = this.state.direction.x;
+    const y = this.state.direction.y;
+
+    if (x > 0  && y < 0) {return 45}
+    else if (x > 0 && y === 0) {return 90}
+    else if (x > 0 && y > 0) {return 135}
+    else if (x === 0 && y > 0) {return 180}
+    else if (x< 0 && y > 0) {return 225}
+    else if (x< 0 && y === 0) {return 270}
+    if(x < 0 && y < 0){return 315} else { return 0}
+  };
+
   render() {
     const { color, x, y } = this.state;
 
     return (
-      <Circle
-        ref={comp => {
-          this.ball = comp;
-        }}
-        x={x}
-        y={y}
-        radius={3}
-        fill={"white"}
-        shadowBlur={1}
+
+      <Star
+          ref={node =>{
+            this.str=node;
+          }}
+          x={x}
+          y={y}
+          innerRadius={5}
+          outerRadius={10}
+          numPoints={5}
+          fill={color}
+          rotation={this.rotation()}
       />
     );
   }

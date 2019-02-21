@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { Circle } from "react-konva";
+import {Circle, Star} from "react-konva";
 import { WIDTH, HEIGHT } from "./Field";
 
 import KeyHandler from "react-key-handler";
@@ -128,19 +128,34 @@ export default class Ship extends PureComponent {
     }, 200);
   };
 
+  rotation = () => {
+    const x = this.state.direction.x;
+    const y = this.state.direction.y;
+
+    if (x > 0  && y < 0) {return 45}
+    else if (x > 0 && y === 0) {return 90}
+    else if (x > 0 && y > 0) {return 135}
+    else if (x === 0 && y > 0) {return 180}
+    else if (x< 0 && y > 0) {return 225}
+    else if (x< 0 && y === 0) {return 270}
+    if(x < 0 && y < 0){return 315} else { return 0}
+  };
+
   render() {
     const { color, x, y } = this.state;
 
     return (
-      <Circle
-        ref={comp => {
-          this.ball = comp;
-        }}
-        x={x}
-        y={y}
-        radius={10}
-        fill={color}
-        shadowBlur={1}
+      <Star
+          ref={node =>{
+            this.str=node;
+          }}
+          x={x}
+          y={y}
+          innerRadius={10}
+          outerRadius={20}
+          numPoints={3}
+          fill={color}
+          rotation={this.rotation()}
       >
         {this.keys.map(key => (
           <KeyHandler
@@ -166,7 +181,7 @@ export default class Ship extends PureComponent {
             onKeyHandle={this.handleKeyPress}
           />
         ))}
-      </Circle>
+      </Star>
     );
   }
 
