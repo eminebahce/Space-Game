@@ -16,11 +16,13 @@ const state = { players, bullets };
 io.on("connection", socket => {
   console.log(socket.id);
   socket.on("new player", () => {
-    players.push({
-      id: socket.id,
-      velocity: { x: 0, y: 0 },
-      position: { x: Math.random() * 800, y: Math.random() * 600 }
-    });
+    if (players.length < 2) {
+      players.push({
+        id: socket.id,
+        velocity: { x: 0, y: 0 },
+        position: { x: Math.random() * 800, y: Math.random() * 600 }
+      });
+    }
   });
   socket.on("movement", data => {
     const player = players.find(player => player.id === socket.id) || {};

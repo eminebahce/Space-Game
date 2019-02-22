@@ -19,7 +19,7 @@ export default class Game extends Component {
       aPlayerHasDied: false
     };
 
-    this.socket = io("localhost:4000");
+    this.socket = io("https://space-shooter-server.herokuapp.com/");
 
     this.socket.emit("new player");
     setInterval(() => {
