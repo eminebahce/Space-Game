@@ -1,7 +1,5 @@
-
-.inner {
-    display: flex;
-    align-items: center;
+.stage {
+  margin-left: 500px !important;
 }
 
 .App-logo {
