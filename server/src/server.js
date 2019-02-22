@@ -33,11 +33,9 @@ io.on("connection", socket => {
   });
 
   socket.on("shoot_bullet", bullet => {
-    console.log(bullet);
     if (bullet.playerId === socket.id) {
       bullets.push(bullet);
     }
-    console.log(state.bullets);
   });
 
   socket.on("remove_bullet", id => {

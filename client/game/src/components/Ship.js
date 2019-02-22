@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import {Circle, Star} from "react-konva";
+import { Circle, Star } from "react-konva";
 import { WIDTH, HEIGHT } from "./Field";
 
 import KeyHandler from "react-key-handler";
@@ -72,19 +72,21 @@ export default class Ship extends PureComponent {
     this.animationTimeout = setTimeout(this.animate, 1000 / 60);
   };
 
+  speed = 5;
+
   handleKeyDown = event => {
     switch (event.key) {
       case "i":
-        this.setState({ aiming: { x: this.state.aiming.x, y: -1 } });
+        this.setState({ aiming: { x: this.state.aiming.x, y: -this.speed } });
         break;
       case "k":
-        this.setState({ aiming: { x: this.state.aiming.x, y: 1 } });
+        this.setState({ aiming: { x: this.state.aiming.x, y: this.speed } });
         break;
       case "j":
-        this.setState({ aiming: { x: -1, y: this.state.aiming.y } });
+        this.setState({ aiming: { x: -this.speed, y: this.state.aiming.y } });
         break;
       case "l":
-        this.setState({ aiming: { x: 1, y: this.state.aiming.y } });
+        this.setState({ aiming: { x: this.speed, y: this.state.aiming.y } });
         break;
       default:
         return false;
@@ -132,13 +134,24 @@ export default class Ship extends PureComponent {
     const x = this.state.direction.x;
     const y = this.state.direction.y;
 
-    if (x > 0  && y < 0) {return 45}
-    else if (x > 0 && y === 0) {return 90}
-    else if (x > 0 && y > 0) {return 135}
-    else if (x === 0 && y > 0) {return 180}
-    else if (x< 0 && y > 0) {return 225}
-    else if (x< 0 && y === 0) {return 270}
-    if(x < 0 && y < 0){return 315} else { return 0}
+    if (x > 0 && y < 0) {
+      return 45;
+    } else if (x > 0 && y === 0) {
+      return 90;
+    } else if (x > 0 && y > 0) {
+      return 135;
+    } else if (x === 0 && y > 0) {
+      return 180;
+    } else if (x < 0 && y > 0) {
+      return 225;
+    } else if (x < 0 && y === 0) {
+      return 270;
+    }
+    if (x < 0 && y < 0) {
+      return 315;
+    } else {
+      return 0;
+    }
   };
 
   render() {
@@ -146,16 +159,16 @@ export default class Ship extends PureComponent {
 
     return (
       <Star
-          ref={node =>{
-            this.str=node;
-          }}
-          x={x}
-          y={y}
-          innerRadius={10}
-          outerRadius={20}
-          numPoints={3}
-          fill={color}
-          rotation={this.rotation()}
+        ref={node => {
+          this.str = node;
+        }}
+        x={x}
+        y={y}
+        innerRadius={10}
+        outerRadius={20}
+        numPoints={3}
+        fill={color}
+        rotation={this.rotation()}
       >
         {this.keys.map(key => (
           <KeyHandler
