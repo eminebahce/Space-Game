@@ -81,10 +81,9 @@ export default class Game extends Component {
   keys = ["w", "a", "s", "d"];
 
   shootBullet = (playerId, position, direction) => {
-    console.log(playerId, position, direction);
     const newBullet = { playerId, id: Math.random(), position, direction };
     this.socket.emit("shoot_bullet", newBullet);
-    setTimeout(() => this.socket.emit("remove_bullet", newBullet.id), 1000);
+    setTimeout(() => this.socket.emit("remove_bullet", newBullet.id), 3000);
   };
 
   removeBullet = bulletId => {
