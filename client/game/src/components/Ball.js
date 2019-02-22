@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import Konva from "konva";
-import { Circle } from "react-konva";
+import {Circle, Group, Rect, Shape, Star} from "react-konva";
 import { WIDTH, HEIGHT } from "./Field";
 
 const MIN_X = 12,
@@ -9,13 +9,20 @@ const MIN_X = 12,
     MAX_Y = HEIGHT - MIN_Y,
     SPEED = 30;
 
+const imageUrl = "/Users/eminebahce/Desktop/Development/Game/client/game/src/ship.png";
+
 export default class Ball extends PureComponent {
-    state = {
-        color: this.props.color,
-        x: MIN_X,
-        y: MIN_Y,
-        direction: { x: 0, y: 0 }
-    };
+
+    constructor(...args){
+        super(...args);
+
+        this.state = {
+            color: this.props.color,
+            x: MIN_X,
+            y: MIN_Y,
+            direction: { x: 0, y: 0 },
+        };
+    }
 
     componentDidMount() {
         this.animate();
@@ -58,25 +65,41 @@ export default class Ball extends PureComponent {
 
         this.animationTimeout = setTimeout(this.animate, 50);
     };
+    rotation = () => {
+        const x = this.state.direction.x;
+        const y = this.state.direction.y;
 
+        if (x > 0  && y < 0) {return 45}
+        else if (x > 0 && y === 0) {return 90}
+        else if (x > 0 && y > 0) {return 135}
+        else if (x === 0 && y > 0) {return 180}
+        else if (x< 0 && y > 0) {return 225}
+        else if (x< 0 && y === 0) {return 270}
+        if(x < 0 && y < 0){return 315} else { return 0
+        }}
     render() {
-        const { color, x, y } = this.state;
+        const { color, x, y, angle } = this.state;
 
         return (
-            <Circle
-                ref={comp => {
-                    this.ball = comp;
-                }}
-                x={x}
-                y={y}
-                radius={10}
-                fill={color}
-                shadowBlur={1}
-            />
+            <Group>
+                <Star
+                    ref={node =>{
+                        this.str=node;
+                    }}
+                    x={x}
+                    y={y}
+                    innerRadius={10}
+                    outerRadius={20}
+                    numPoints={3}
+                    fill={color}
+                    rotation={this.rotation()}
+                />
+            </Group>
         );
     }
 
     componentWillUnmount() {
         clearTimeout(this.animationTimeout);
+        clearTimeout(this.rotationTimeOut);
     }
 }

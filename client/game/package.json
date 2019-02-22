@@ -1,5 +1,9 @@
 {
   "name": "game",
+  "engines": {
+    "node": "7.8.0",
+    "npm": "4.2.0"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +13,8 @@
     "react-key-handler": "^1.2.0-beta.3",
     "react-konva": "^16.8.2-0",
     "react-scripts": "2.1.5",
-    "socket.io-client": "^2.2.0"
+    "socket.io-client": "^2.2.0",
+    "use-image": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
